@@ -1,0 +1,11 @@
+Key points
+
+String buffer, to have a mutable String class
+thread safe
+resizing
+
+Initial capacity = 5, upon appending characters it will be 5 10 20 40 ...
+
+A thought:
+
+To make it thread safe, an instance level lock can be used across the methods which can modify the core character array
